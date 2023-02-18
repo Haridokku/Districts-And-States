@@ -54,6 +54,7 @@ app.get("/states/:stateId/", async (request, response) => {
 
 const convertDistrictObjectToResponseObject = (dist) => {
   return {
+    districtId:dist.district_id,
     districtName: dist.district_name,
     stateId: dist.state_id,
     cases: dist.cases,
